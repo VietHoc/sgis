@@ -22,7 +22,7 @@ module Sgis
     end
 
     def esm_current_user
-      @context.current_user
+      @context.get_current_user
     end
 
     def user
