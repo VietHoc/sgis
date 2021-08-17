@@ -3,8 +3,8 @@
 require_relative "lib/sgis/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "canvas_ems"
-  spec.version       = CanvasEms::VERSION
+  spec.name          = "sgis"
+  spec.version       = SGIS::VERSION
   spec.authors       = ["Hoc Le"]
   spec.email         = ["viethocpro@gmail.com"]
 
