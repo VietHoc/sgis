@@ -24,6 +24,10 @@ module Sgis
       @context.ios
     end
 
+    def index
+      render json: {status: 200}
+    end
+
     def sgis_current_user
       @context.get_current_user
     end
