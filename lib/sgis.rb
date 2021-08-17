@@ -3,7 +3,10 @@
 require_relative "sgis/version"
 
 module Sgis
-  class Error < StandardError; end
+  class Error < StandardError
+    puts 'errors'
+  end
+  
   class UserGem
     def initialize
       @context = Api::V1::ReceiptsController.new
