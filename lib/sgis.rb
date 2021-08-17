@@ -12,24 +12,20 @@ module Sgis
       @context = Api::V1::ReceiptsController.new
     end
 
-    def last_user
+    def sgis_last_user
       User.last
     end
 
-    def ios_devices
+    def sgis_ios_devices
       @context.ios_devices?
     end
 
-    def ios
+    def sgis_ios
       @context.ios
     end
 
-    def esm_current_user
+    def sgis_current_user
       @context.get_current_user
-    end
-
-    def user
-      @current_user ||= warden.authenticate(scope: :user)
     end
   end
 end
