@@ -7,7 +7,7 @@ module Sgis
     puts 'errors'
   end
   
-  class UserGem
+  class SgisController
     def initialize
       @context = Api::V1::ReceiptsController.new
     end
